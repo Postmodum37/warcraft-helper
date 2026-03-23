@@ -160,7 +160,7 @@ Apply underperformance flag logic from `references/analysis-guide.md`:
 
 For each unique mechanic problem identified (e.g., "Shadow Orb damage on Crown of the Cosmos"):
 1. Read `<skill-path>/references/resource-sources.md` for search strategy
-2. Search the web using the patterns described there
+2. Use the WebSearch tool with the query patterns described there
 3. Pick 1-2 best resources per mechanic (prefer visual content)
 4. If no specific resource found, fall back to general boss guide
 

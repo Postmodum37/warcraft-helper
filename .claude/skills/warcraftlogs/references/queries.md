@@ -19,8 +19,8 @@ Ready-to-use GraphQL queries. Replace placeholders `$NAME`, `$SERVER`, `$REGION`
 ```
 
 **Common uses:**
-- Raid overview: `zoneID: 42, difficulty: 5, metric: dps` (Mythic Liberation of Undermine DPS)
-- M+ scores: `zoneID: 45, metric: playerscore` (M+ Season 3)
+- Raid overview: `zoneID: 46, difficulty: 5, metric: dps` (Mythic VS / DR / MQD DPS)
+- M+ scores: `zoneID: 47, metric: playerscore` (Midnight M+ Season 1)
 - Healer rankings: `metric: hps, role: Healer`
 
 ---
@@ -40,7 +40,7 @@ Ready-to-use GraphQL queries. Replace placeholders `$NAME`, `$SERVER`, `$REGION`
 ```
 
 **Common uses:**
-- Boss parse: `encounterID: 3016, difficulty: 5, metric: dps` (Mythic Gallywix DPS)
+- Boss parse: `encounterID: 3176, difficulty: 5, metric: dps` (Mythic Imperator Averzian DPS)
 - With spec filter: add `specName: "Retribution"`
 - Historical: add `timeframe: Historical`
 

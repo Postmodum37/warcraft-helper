@@ -26,9 +26,10 @@ If the user mentions a specific older raid or season (e.g. Liberation of Undermi
 1. Figure out what the user is asking about
 2. Pick a query template from `references/queries.md` or construct a custom query using `references/schema.md`
 3. Execute via the bundled helper script: `<skill-path>/scripts/wcl.sh '<GRAPHQL_QUERY>'`
+   - Optional second argument for variables: `<skill-path>/scripts/wcl.sh '<QUERY>' '{"name": "value"}'`
 4. Interpret the results and present them clearly
 
-The script handles OAuth authentication automatically. Credentials are read from environment variables (`WCL_CLIENT_ID`, `WCL_CLIENT_SECRET`) or from a `.env` file at `${CLAUDE_SKILL_DIR}/.env`.
+The script handles OAuth authentication automatically (including retry on expired tokens). Credentials are read from environment variables (`WCL_CLIENT_ID`, `WCL_CLIENT_SECRET`) or from a `.env` file at `${CLAUDE_SKILL_DIR}/.env`.
 
 ## Identifying What to Query
 

@@ -20,5 +20,5 @@ The main skill is defined in `SKILL.md`. It orchestrates:
 ## Current Content
 
 Defers to the warcraftlogs skill for current raid/zone IDs. Currently:
-- Raid: VS / DR / MQD (zone ID 46, difficulty 3 for Normal, 4 for Heroic)
+- Raid: VS / DR / MQD (zone ID 46, difficulty 3 for Normal, 4 for Heroic, 5 for Mythic)
 - Expansion: Midnight (ID 7)

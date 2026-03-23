@@ -62,9 +62,7 @@ get_token() {
     exit 1
   fi
 
-  echo "$(date +%s)" > "$TOKEN_CACHE"
-  echo "$token" >> "$TOKEN_CACHE"
-  chmod 600 "$TOKEN_CACHE"
+  (umask 077 && echo "$(date +%s)" > "$TOKEN_CACHE" && echo "$token" >> "$TOKEN_CACHE")
 
   echo "$token"
 }
@@ -94,12 +92,38 @@ print(json.dumps({'query': q, 'variables': v}))
 ")
   fi
 
-  curl -s -X POST \
+  local http_code response
+  response=$(curl -s -w "\n%{http_code}" -X POST \
     -H "Authorization: Bearer $token" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
     -d "$payload" \
-    https://www.warcraftlogs.com/api/v2/client
+    https://www.warcraftlogs.com/api/v2/client)
+
+  http_code=$(echo "$response" | tail -1)
+  response=$(echo "$response" | sed '$d')
+
+  # Retry once with a fresh token on 401 (expired/invalid token)
+  if [[ "$http_code" == "401" ]]; then
+    rm -f "$TOKEN_CACHE"
+    token=$(get_token)
+    response=$(curl -s -w "\n%{http_code}" -X POST \
+      -H "Authorization: Bearer $token" \
+      -H "Content-Type: application/json" \
+      -H "Accept: application/json" \
+      -d "$payload" \
+      https://www.warcraftlogs.com/api/v2/client)
+    http_code=$(echo "$response" | tail -1)
+    response=$(echo "$response" | sed '$d')
+  fi
+
+  if [[ "$http_code" -ge 400 ]]; then
+    echo "Error: API returned HTTP $http_code" >&2
+    echo "$response" >&2
+    exit 1
+  fi
+
+  echo "$response"
 }
 
 # --- Main ---
