@@ -1,2 +1,5 @@
 .env
 .claude/settings.local.json
+archon-nsrt/tailor/.cache/
+archon-nsrt/tailor/data/
+archon-nsrt/tailor/out/

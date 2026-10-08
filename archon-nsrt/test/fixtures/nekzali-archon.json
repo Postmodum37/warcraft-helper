@@ -1,0 +1,318 @@
+{
+  "pageProps": {
+    "page": {
+      "sections": [
+        {
+          "component": "BuildsCooldownsSection",
+          "props": {
+            "eventTimelineGridsByFacetId": {
+              "20": {
+                "categories": [
+                  {
+                    "id": "encounter",
+                    "label": "Nek'zali",
+                    "abilities": [
+                      {
+                        "name": "Soulcoil Rite",
+                        "ids": [
+                          1288772
+                        ],
+                        "isSelected": true,
+                        "scope": {
+                          "encounterId": 3470
+                        }
+                      },
+                      {
+                        "name": "Essence Rend",
+                        "ids": [
+                          1287434
+                        ],
+                        "isSelected": true,
+                        "scope": {
+                          "encounterId": 3470
+                        }
+                      },
+                      {
+                        "name": "Posession Barrage",
+                        "ids": [
+                          1284103
+                        ],
+                        "isSelected": true,
+                        "scope": {
+                          "encounterId": 3470
+                        }
+                      },
+                      {
+                        "name": "Hungering Pyre",
+                        "ids": [
+                          1294742
+                        ],
+                        "isSelected": true,
+                        "scope": {
+                          "encounterId": 3470
+                        }
+                      },
+                      {
+                        "name": "Ritual of Awakening",
+                        "ids": [
+                          1295124
+                        ],
+                        "isSelected": true,
+                        "scope": {
+                          "encounterId": 3470
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "raid",
+                    "label": "Raid",
+                    "abilities": [
+                      {
+                        "name": "Apotheosis",
+                        "ids": [
+                          200183
+                        ],
+                        "isSelected": true,
+                        "scope": {
+                          "specId": 70002
+                        }
+                      },
+                      {
+                        "name": "Divine Hymn",
+                        "ids": [
+                          64843
+                        ],
+                        "isSelected": true,
+                        "scope": {
+                          "specId": 70002
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "defensive",
+                    "label": "Defensive",
+                    "abilities": [
+                      {
+                        "name": "Fade",
+                        "ids": [
+                          586
+                        ],
+                        "isSelected": false,
+                        "scope": {
+                          "classId": 7
+                        }
+                      },
+                      {
+                        "name": "Desperate Prayer",
+                        "ids": [
+                          19236
+                        ],
+                        "isSelected": false,
+                        "scope": {
+                          "classId": 7
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "utility",
+                    "label": "Utility",
+                    "abilities": [
+                      {
+                        "name": "Leap of Faith",
+                        "ids": [
+                          73325
+                        ],
+                        "isSelected": false,
+                        "scope": {
+                          "classId": 7
+                        }
+                      },
+                      {
+                        "name": "Mass Dispel",
+                        "ids": [
+                          32375
+                        ],
+                        "isSelected": false,
+                        "scope": {
+                          "classId": 7
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "externals",
+                    "label": "Externals",
+                    "abilities": [
+                      {
+                        "name": "Lust",
+                        "ids": [
+                          2825
+                        ],
+                        "isSelected": false,
+                        "scope": {}
+                      }
+                    ]
+                  },
+                  {
+                    "id": "other",
+                    "label": "Other",
+                    "abilities": [
+                      {
+                        "name": "Healthstone",
+                        "ids": [
+                          6262
+                        ],
+                        "isSelected": false,
+                        "scope": {}
+                      }
+                    ]
+                  }
+                ],
+                "rows": [
+                  {
+                    "rankingLabel": "1",
+                    "label": "528.44K",
+                    "labelUrl": "https://www.warcraftlogs.com/reports/rFjRm3JvkxQbNGX1?fight=1&source=3&type=casts&view=timeline",
+                    "events": [
+                      {
+                        "ability": {
+                          "id": 2825,
+                          "name": "Bloodlust"
+                        },
+                        "timestamp": 877,
+                        "duration": 0
+                      },
+                      {
+                        "ability": {
+                          "id": 32375,
+                          "name": "Mass Dispel"
+                        },
+                        "timestamp": 22330,
+                        "duration": 1060
+                      },
+                      {
+                        "ability": {
+                          "id": 200183,
+                          "name": "Apotheosis"
+                        },
+                        "timestamp": 27342,
+                        "duration": 0
+                      },
+                      {
+                        "ability": {
+                          "id": 64843,
+                          "name": "Divine Hymn"
+                        },
+                        "timestamp": 69375,
+                        "duration": 0
+                      },
+                      {
+                        "ability": {
+                          "id": 19236,
+                          "name": "Desperate Prayer"
+                        },
+                        "timestamp": 80703,
+                        "duration": 0
+                      },
+                      {
+                        "ability": {
+                          "id": 586,
+                          "name": "Fade"
+                        },
+                        "timestamp": 118423,
+                        "duration": 0
+                      },
+                      {
+                        "ability": {
+                          "id": 200183,
+                          "name": "Apotheosis"
+                        },
+                        "timestamp": 168470,
+                        "duration": 0
+                      },
+                      {
+                        "ability": {
+                          "id": 64843,
+                          "name": "Divine Hymn"
+                        },
+                        "timestamp": 193885,
+                        "duration": 0
+                      },
+                      {
+                        "ability": {
+                          "id": 586,
+                          "name": "Fade"
+                        },
+                        "timestamp": 212773,
+                        "duration": 0
+                      },
+                      {
+                        "ability": {
+                          "id": 586,
+                          "name": "Fade"
+                        },
+                        "timestamp": 240658,
+                        "duration": 0
+                      },
+                      {
+                        "ability": {
+                          "id": 19236,
+                          "name": "Desperate Prayer"
+                        },
+                        "timestamp": 247144,
+                        "duration": 0
+                      },
+                      {
+                        "ability": {
+                          "id": 6262,
+                          "name": "Healthstone"
+                        },
+                        "timestamp": 265698,
+                        "duration": 0
+                      },
+                      {
+                        "ability": {
+                          "id": 586,
+                          "name": "Fade"
+                        },
+                        "timestamp": 272697,
+                        "duration": 0
+                      },
+                      {
+                        "ability": {
+                          "id": 200183,
+                          "name": "Apotheosis"
+                        },
+                        "timestamp": 289966,
+                        "duration": 0
+                      },
+                      {
+                        "ability": {
+                          "id": 586,
+                          "name": "Fade"
+                        },
+                        "timestamp": 308602,
+                        "duration": 0
+                      },
+                      {
+                        "ability": {
+                          "id": 64843,
+                          "name": "Divine Hymn"
+                        },
+                        "timestamp": 315899,
+                        "duration": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

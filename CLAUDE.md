@@ -55,11 +55,17 @@ All skills live in `.claude/skills/` and are auto-discovered. Each skill has its
       CLAUDE.md
       references/       # Routing logic and audit template
   settings.local.json   # Local permissions (not committed)
+archon-nsrt/            # Userscript, not a skill: Archon top log → NSRT reminder note
+  archon-nsrt.user.js   # Per-boss NSRT phase rules (ENCOUNTERS) + core + archon.gg panel
+  tailor/               # Node: top logs + one guild's pulls → per-boss cooldown plan as NSRT notes (collect.js, then report.js)
+  test/                 # node --test 'test/*.test.js' (run from archon-nsrt/)
+  README.md             # Install, use, how each phase rule was checked
 ```
 
 ## Conventions
 
-- **Credentials**: WCL API credentials go in `.claude/skills/warcraftlogs/.env`. SimHammer URL goes in `.claude/skills/sim/.env`. Never commit `.env` files.
+- **Credentials**: WCL API credentials go in `.claude/skills/warcraftlogs/.env`. SimHammer URL goes in `.claude/skills/sim/.env`. Never commit `.env` files. Exception: the `archon-nsrt` userscript runs in the browser, so it keeps its WCL client in the userscript manager's storage.
+- **NSRT phase rules**: `archon-nsrt` mirrors Northern Sky Raid Tools' per-boss phase detection (`EncounterAlerts/<season>/*.lua` in Reloe/NorthernSkyRaidTools). When a new raid tier or NSRT release lands, re-derive the rules and check them against NSRT's own boss timers on several Mythic kills.
 - **Skill dependency**: `raid-review` depends on `warcraftlogs` — it uses its `wcl.sh` script and query templates. `wow-check` orchestrates all other skills.
 - **No-setup skills**: `raiderio`, `archon`, and `murlok` use public APIs or web scraping and need no credentials.
 - **Current content defaults**: When no expansion/raid is specified, default to the current tier. Current defaults are maintained in each skill's `SKILL.md`.
