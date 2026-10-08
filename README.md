@@ -69,6 +69,12 @@ Smart router that answers any WoW question by picking the right skill(s) automat
 - Full character audits combining data from all sources
 - Compares current gear/talents against meta recommendations
 
+## Userscript: Archon → NSRT reminder note
+
+[`archon-nsrt/`](archon-nsrt/README.md) adds an **NSRT** button to each top log on an Archon raid
+rotation page. It copies that player's cooldowns as a Northern Sky Raid Tools reminder note,
+timed the way NSRT counts phases.
+
 ## Setup
 
 ### Core (required)

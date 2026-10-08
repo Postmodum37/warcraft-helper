@@ -1,0 +1,73 @@
+{
+  "fightStart": 183805,
+  "events": [
+    {
+      "timestamp": 265071,
+      "type": "begincast",
+      "sourceID": 24,
+      "targetID": -1,
+      "abilityGameID": 1295124,
+      "fight": 1
+    },
+    {
+      "timestamp": 266568,
+      "type": "cast",
+      "sourceID": 24,
+      "targetID": -1,
+      "abilityGameID": 1295124,
+      "fight": 1
+    },
+    {
+      "timestamp": 277056,
+      "type": "begincast",
+      "sourceID": 79,
+      "sourceInstance": 1,
+      "targetID": -1,
+      "abilityGameID": 1292248,
+      "fight": 1
+    },
+    {
+      "timestamp": 292031,
+      "type": "cast",
+      "sourceID": 79,
+      "sourceInstance": 1,
+      "targetID": 72,
+      "abilityGameID": 1292248,
+      "fight": 1
+    },
+    {
+      "timestamp": 328001,
+      "type": "begincast",
+      "sourceID": 79,
+      "sourceInstance": 2,
+      "targetID": -1,
+      "abilityGameID": 1292248,
+      "fight": 1
+    },
+    {
+      "timestamp": 342994,
+      "type": "cast",
+      "sourceID": 79,
+      "sourceInstance": 2,
+      "targetID": 72,
+      "abilityGameID": 1292248,
+      "fight": 1
+    },
+    {
+      "timestamp": 379624,
+      "type": "applybuff",
+      "sourceID": 24,
+      "targetID": 24,
+      "abilityGameID": 1290003,
+      "fight": 1
+    },
+    {
+      "timestamp": 384633,
+      "type": "removebuff",
+      "sourceID": 24,
+      "targetID": 24,
+      "abilityGameID": 1290003,
+      "fight": 1
+    }
+  ]
+}
